@@ -125,3 +125,259 @@ header-content {
 
 
 
+.affiche {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-image: url(/public/img/pelli.jpg);
+  background-position: center;
+  background-size: cover;
+  background-position: 50% 50%;
+  border-top: 50px solid #ffffff;
+  border-bottom: 50px solid #ffffff;
+  border-left: 50px solid #ffffff;
+  border-right: 50px solid #ffffff;
+}
+
+.affiche .expo {
+  position: absolute;
+  top: 11px;
+  left: 13px;
+  font-family: "Matter-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.affiche .btn-decouvrir {
+  position: absolute;
+  width: 202px;
+  height: 64px;
+  top: 317px;
+  left: 49px;
+  border: 2px solid;
+  border-color: #faecec;
+}
+
+.affiche .overlap-group {
+  position: relative;
+  width: 181px;
+  height: 32px;
+  top: 15px;
+  left: 9px;
+}
+
+.affiche .text-wrapper {
+  position: absolute;
+  width: 158px;
+  top: 0;
+  left: 0;
+  font-family: "Matter-Regular", Helvetica;
+  font-weight: 400;
+  color: #f7f3f3;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.affiche .arrow {
+  position: absolute;
+  width: 27px;
+  height: 15px;
+  top: 11px;
+  left: 154px;
+}
+
+.affiche2 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-image: url(/public/img/vlad-shapochnikov-uPJzWWhPcP4-unsplash\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-left: 50px solid #ffffff;
+    border-right: 50px solid #ffffff;
+}
+
+.affiche2 .expo {
+    position: absolute;
+    top: 11px;
+    left: 13px;
+    font-family: "Matter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 26px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.affiche2 .btn-decouvrir {
+    position: absolute;
+    width: 202px;
+    height: 64px;
+    top: 317px;
+    left: 49px;
+    border: 2px solid;
+    border-color: #faecec;
+}
+
+.affiche2 .overlap-group {
+    position: relative;
+    width: 181px;
+    height: 32px;
+    top: 15px;
+    left: 9px;
+}
+
+.affiche2 .text-wrapper {
+    position: absolute;
+    width: 158px;
+    top: 0;
+    left: 0;
+    font-family: "Matter-Regular", Helvetica;
+    font-weight: 400;
+    color: #f7f3f3;
+    font-size: 26px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.affiche2 .arrow {
+    position: absolute;
+    width: 27px;
+    height: 15px;
+    top: 11px;
+    left: 154px;
+}
+
+.affiche3 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-image: url(/public/img/d5ae28f878bed847833d29e68e289ed4\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-top: 50px solid #ffffff;
+    border-left: 50px solid #ffffff;
+    border-right: 50px solid #ffffff;
+}
+
+.affiche3 .expo {
+    position: absolute;
+    top: 11px;
+    left: 13px;
+    font-family: "Matter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 26px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.affiche3 .btn-decouvrir {
+    position: absolute;
+    width: 202px;
+    height: 64px;
+    top: 317px;
+    left: 49px;
+    border: 2px solid;
+    border-color: #faecec;
+}
+
+.affiche3 .overlap-group {
+    position: relative;
+    width: 181px;
+    height: 32px;
+    top: 15px;
+    left: 9px;
+}
+
+.affiche3 .text-wrapper {
+    position: absolute;
+    width: 158px;
+    top: 0;
+    left: 0;
+    font-family: "Matter-Regular", Helvetica;
+    font-weight: 400;
+    color: #f7f3f3;
+    font-size: 26px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.affiche3 .arrow {
+    position: absolute;
+    width: 27px;
+    height: 15px;
+    top: 11px;
+    left: 154px;
+}
+
+.affiche4 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-image: url(/public/img/logan-easterling-JvoBrbEIgrw-unsplash\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-top: 50px solid #ffffff;
+    border-bottom: 50px solid #ffffff;
+    border-left: 50px solid #ffffff;
+    border-right: 50px solid #ffffff;
+}
+
+.affiche4 .expo {
+    position: absolute;
+    top: 11px;
+    left: 13px;
+    font-family: "Matter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 26px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.affiche4 .btn-decouvrir {
+    position: absolute;
+    width: 202px;
+    height: 64px;
+    top: 317px;
+    left: 49px;
+    border: 2px solid;
+    border-color: #faecec;
+}
+
+.affiche4 .overlap-group {
+    position: relative;
+    width: 181px;
+    height: 32px;
+    top: 15px;
+    left: 9px;
+}
+
+.affiche4 .text-wrapper {
+    position: absolute;
+    width: 158px;
+    top: 0;
+    left: 0;
+    font-family: "Matter-Regular", Helvetica;
+    font-weight: 400;
+    color: #f7f3f3;
+    font-size: 26px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.affiche4 .arrow {
+    position: absolute;
+    width: 27px;
+    height: 15px;
+    top: 11px;
+    left: 154px;
+}
