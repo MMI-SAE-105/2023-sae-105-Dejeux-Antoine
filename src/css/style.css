@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid black;
+    /* Ajout du trait noir */
+}
+
+header-content {
+    font-size: 18px;
+}
+
+.menu-icon {
+    font-size: 24px;
+}
