@@ -12,12 +12,36 @@ h1 {
     margin: 50px auto;
 }
 
- .image-container {
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
+.images-container {
+    display: flex;
+    
+}
 
- .image-container img {
-     margin: 0 10px;
- }
+.images-container img {
+    width: 50%;
+    margin: 50px auto;
+}
+
+.images-container2 {
+    display: flex;
+
+}
+
+.images-container2 img {
+    width: 100%;
+}
+
+h3 {
+    text-align: center;
+    color: grey;
+    font-size: small;
+}
+
+.images-container3 {
+    display: flex;
+margin-bottom: 50px;
+}
+
+.images-container3 img {
+    width: 100%;
+}
