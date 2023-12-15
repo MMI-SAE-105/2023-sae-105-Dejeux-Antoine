@@ -1,0 +1,120 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-content a {
+    font-family: serif;
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.carrousel {
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f8f8f8;
+}
+
+.carrousel img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+}
+
+.carrousel_parent-ecrans {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.carrousel_ecran {
+    width: 100%;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+}
+
+.carrousel_ecran figure {
+    margin: none;
+}
+
+
+.carrousel_btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.5rem;
+    z-index: 1;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 50%;
+}
+
+.carrousel_btn-avant {
+    left: 20px;
+}
+
+.carrousel_btn-apres {
+    right: 20px;
+}
+
+
+
+.caroussel_liste-liens {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 1rem;
+
+    border-radius: 100px;
+}
+
+.caroussel_liste-liens a.actif {
+
+    display: block;
+    background-color: rgb(21, 21, 159);
+    border-radius: 10px;
+    border: 4px double #ffffff;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding: 7%;
+    width: 100px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.caroussel_liste-liens a {
+
+
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    display: block;
+    background-color: rgb(21, 21, 159);
+    border-radius: 10px;
+    border: 4px double #ffffff;
+    color: #ffffff;
+    padding: 5px;
+
+
+}
