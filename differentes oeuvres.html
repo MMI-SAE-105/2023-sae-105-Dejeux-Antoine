@@ -68,43 +68,57 @@
             </div>
             <div id="ecran-2" class="carrousel_ecran">
                 <figure>
+                    <a href="oeuvres 2.html">
                     <img src="public/img/carrousel 2.jpg" alt="image ecran 2">
+                    </a>
                     <figcaption>oeuvre 2</figcaption>
                 </figure>
             </div>
             <div id="ecran-3" class="carrousel_ecran">
                 <figure>
+                    <a href="oeuvres 3.html">
                     <img src="public/img/carrousel 3.jpg" alt="image ecran 3">
+                    </a>
                     <figcaption>oeuvre 3</figcaption>
                 </figure>
             </div>
             <div id="ecran-4" class="carrousel_ecran">
                 <figure>
+                    <a href="oeuvres 4.html">
                     <img src="public/img/carrousel 4.jpg" alt="image ecran 4">
+                    </a>
                     <figcaption>oeuvre 4</figcaption>
                 </figure>
             </div>
             <div id="ecran-5" class="carrousel_ecran">
                 <figure>
+                    <a href="oeuvres 5.html">
                     <img src="public/img/carrousel 5.jpg" alt="image ecran 5">
+                    </a>
                     <figcaption>oeuvre 5</figcaption>
                 </figure>
             </div>
             <div id="ecran-6" class="carrousel_ecran">
                 <figure>
+                    <a href="oeuvres 6.html">
                     <img src="public/img/carrousel 6.jpg" alt="image ecran 5">
+                    </a>
                     <figcaption>oeuvre 6</figcaption>
                 </figure>
             </div>
             <div id="ecran-7" class="carrousel_ecran">
                 <figure>
+                    <a href="oeuvres 7.html">
                     <img src="public/img/carrousel 7.jpg" alt="image ecran 5">
+                    </a>
                     <figcaption>oeuvre 7</figcaption>
                 </figure>
             </div>
             <div id="ecran-8" class="carrousel_ecran">
                 <figure>
+                    <a href="oeuvres 8.html">
                     <img src="public/img/carrousel 8.JPG" alt="image ecran 5">
+                    </a>
                     <figcaption>oeuvre 8</figcaption>
                 </figure>
             </div>
@@ -179,25 +193,49 @@
 }
 
 .caroussel_liste-liens {
-    /* Centrage de la liste de liens */
-    display: flex;
-    justify-content: center;
-    /* Ajout d'un peu d'espace entre les liens */
-    gap: 20px;
-}
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            gap: 1rem;
+            
+            border-radius: 100px;
+        }
 
-.caroussel_liste-liens a {
-    /* Style des liens */
-    color: white;
-    background-color: blue;
-    padding: 10px;
-    text-decoration: none;
-}
+        .caroussel_liste-liens a.actif {
 
-.caroussel_liste-liens a.actif {
-    /* Style du lien actif */
-    background-color: darkblue;
-}
+            display: block;
+            background-color: rgb(21, 21, 159);
+            border-radius: 10px;
+            border: 4px double #ffffff;
+            color: #ffffff;
+            text-align: center;
+            font-size: 20px;
+            padding: 7%;
+            width: 100px;
+            cursor: pointer;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+
+        .caroussel_liste-liens a {
+
+
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+            display: block;
+            background-color: rgb(21, 21, 159);
+             border-radius: 10px;
+            border: 4px double #ffffff;
+            color: #ffffff;
+            padding: 5px;
+            
+
+        }
     </style>
 </body>
 
