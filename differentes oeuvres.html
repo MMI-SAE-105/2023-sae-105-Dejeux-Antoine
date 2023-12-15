@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/src/css/style.css" />
     <link rel="stylesheet" href="/src/css/oeuvres.css" />
     <script src="src/script.js" defer></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
 <header>
@@ -45,6 +46,157 @@
 
     <h1>8 des plus grandes œuvres de César Pelli à admirer</h1>
 
+
+    <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+        <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth" class="carrousel_btn carrousel_btn-avant"
+            aria-label="slide précedant">&lt;</button>
+        <button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth" class="carrousel_btn carrousel_btn-apres"
+            aria-label="slide suivant">></button>
+        <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="
+                        hrefCourant = '#'+
+                            [...$refs.parent.children]
+                       .find(e=>e.getBoundingClientRect().x>=0)
+                       .id
+                                         ">
+            <div id="ecran-1" class="carrousel_ecran">
+                <figure>
+                    <img src="public/img/carrousel 1.jpg" alt="image ecran 1">
+                    <figcaption>oeuvre 1</figcaption>
+                </figure>
+            </div>
+            <div id="ecran-2" class="carrousel_ecran">
+                <figure>
+                    <img src="public/img/carrousel 2.jpg" alt="image ecran 2">
+                    <figcaption>oeuvre 2</figcaption>
+                </figure>
+            </div>
+            <div id="ecran-3" class="carrousel_ecran">
+                <figure>
+                    <img src="public/img/carrousel 3.jpg" alt="image ecran 3">
+                    <figcaption>oeuvre 3</figcaption>
+                </figure>
+            </div>
+            <div id="ecran-4" class="carrousel_ecran">
+                <figure>
+                    <img src="public/img/carrousel 4.jpg" alt="image ecran 4">
+                    <figcaption>oeuvre 4</figcaption>
+                </figure>
+            </div>
+            <div id="ecran-5" class="carrousel_ecran">
+                <figure>
+                    <img src="public/img/carrousel 5.jpg" alt="image ecran 5">
+                    <figcaption>oeuvre 5</figcaption>
+                </figure>
+            </div>
+            <div id="ecran-6" class="carrousel_ecran">
+                <figure>
+                    <img src="public/img/carrousel 6.jpg" alt="image ecran 5">
+                    <figcaption>oeuvre 6</figcaption>
+                </figure>
+            </div>
+            <div id="ecran-7" class="carrousel_ecran">
+                <figure>
+                    <img src="public/img/carrousel 7.jpg" alt="image ecran 5">
+                    <figcaption>oeuvre 7</figcaption>
+                </figure>
+            </div>
+            <div id="ecran-8" class="carrousel_ecran">
+                <figure>
+                    <img src="public/img/carrousel 8.JPG" alt="image ecran 5">
+                    <figcaption>oeuvre 8</figcaption>
+                </figure>
+            </div>
+        </div>
+        <ul class="caroussel_liste-liens">
+            <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien">oeuvre 1</a></li>
+            <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien">oeuvre 2</a></li>
+            <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien">oeuvre 3</a></li>
+            <li><a href="#ecran-4" :class="{actif:hrefCourant==='#ecran-4'}" class="caroussel_lien">oeuvre 4</a></li>
+            <li><a href="#ecran-5" :class="{actif:hrefCourant==='#ecran-5'}" class="caroussel_lien">oeuvre 5</a></li>
+            <li><a href="#ecran-6" :class="{actif:hrefCourant==='#ecran-6'}" class="caroussel_lien">oeuvre 6</a></li>
+            <li><a href="#ecran-7" :class="{actif:hrefCourant==='#ecran-7'}" class="caroussel_lien">oeuvre 7</a></li>
+            <li><a href="#ecran-8" :class="{actif:hrefCourant==='#ecran-8'}" class="caroussel_lien">oeuvre 8</a></li>
+        </ul>
+    </div>
+
+    <style>
+    
+       
+
+.carrousel {
+    /* Centrage du carrousel */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Ajout d'un peu d'espace autour du carrousel */
+    padding: 20px;
+}
+
+.carrousel_parent-ecrans {
+    /* Utilisation de la grille pour aligner les éléments du carrousel */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    /* Ajout d'un défilement horizontal */
+    overflow-x: auto;
+}
+
+.carrousel_ecran {
+    /* Centrage du contenu de chaque écran */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrousel_ecran img {
+    /* Définir la largeur et la hauteur des images */
+    width: 300px;
+    height: 200px;
+    /* Assurer que l'image couvre toute la zone définie, même si cela signifie que certaines parties de l'image seront coupées */
+    object-fit: cover;
+}
+
+.carrousel_btn {
+    /* Positionnement des boutons au-dessus du carrousel */
+    position: absolute;
+    top: 50%;
+    /* Ajout d'un peu d'espace autour des boutons */
+    padding: 10px;
+}
+
+.carrousel_btn-avant {
+    /* Positionnement du bouton "avant" à gauche */
+    left: 20px;
+}
+
+.carrousel_btn-apres {
+    /* Positionnement du bouton "après" à droite */
+    right: 20px;
+}
+
+.caroussel_liste-liens {
+    /* Centrage de la liste de liens */
+    display: flex;
+    justify-content: center;
+    /* Ajout d'un peu d'espace entre les liens */
+    gap: 20px;
+}
+
+.caroussel_liste-liens a {
+    /* Style des liens */
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.caroussel_liste-liens a.actif {
+    /* Style du lien actif */
+    background-color: darkblue;
+}
+    </style>
 </body>
 
 
