@@ -1,0 +1,42 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header-content a {
+    font-family: serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images-container img {
+    margin: 0 auto;
+    width: 100%;
+    border: 30px solid white;
+}
+
+h3 {
+    text-align: center;
+    color: grey;
+    font-size: small;
+}
+
+.images-container2 {
+    display: flex;
+
+}
+
+.images-container2 img {
+    width: 100%;
+    margin: 50px auto;
+    border: 20px solid white;
+}
