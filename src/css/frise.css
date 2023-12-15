@@ -1,3 +1,13 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header-content a {
+    font-family: serif;
+}
+
+
 .timeline {
     display: flex;
     flex-direction: column;
@@ -14,7 +24,6 @@
 }
 
 .timeline-item p {
-    font-family: Arial, sans-serif;
     font-size: 14px;
 }
 
